@@ -1,0 +1,21 @@
+{
+  "name": "tally-tool",
+  "version": "0.1.0",
+  "description": "Tally — local agent that captures Wi-Fi and app-crash friction signals, diagnoses the cause on-device, files/resolves the Freshservice ticket, and notifies the laptop when it's done.",
+  "private": true,
+  "main": "src/index.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node src/index.js",
+    "simulate": "node src/index.js --simulate-flap",
+    "simulate:approval": "node src/index.js --simulate-flap --force-scenario=dhcp-lease-churn",
+    "simulate:crash": "node src/index.js --simulate-crash-flap",
+    "mock-server": "node mock-server/server.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
