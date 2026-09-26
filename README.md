@@ -4,7 +4,7 @@
 
 **Tally**
 
-### `<Description>`
+### Description
 
 The tickets nobody filed — an agent that detects, diagnoses, and files the IT friction employees never report.
 
